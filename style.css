@@ -1,0 +1,11 @@
+.navbar.transparent {
+    background:0 0;
+    border-bottom:none;
+    margin-bottom:0;
+    position:absolute;
+    width:100%;
+    z-index:1;
+}
+.nav-translucent:hover, .nav-translucent:focus {
+    background: #2222 !important;
+}
