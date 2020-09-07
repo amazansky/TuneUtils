@@ -70,9 +70,43 @@
             <div class="media-content">
                 <div class="content">
                     <p>
-                        <strong><?php echo htmlspecialchars($track['name']); ?></strong> <small><?php echo htmlspecialchars($track['artists'][0]['name']); ?></small>
+                        <strong><?php echo htmlspecialchars($track['name']); ?></strong>
+                        <small>
+                            <?php
+                            foreach ($track['artists'] as $key => $artist) {
+                                if ($key > 0) {
+                                    echo ', ';
+                                }
+                                echo htmlspecialchars($artist['name']);
+                            }
+                            ?>
+                        </small>
                         <br>
-                        <small>Listened at <?php echo $value['played_at']; ?></small>
+                        <?php
+                        // Determine the human readable timestamp
+                        $played = strtotime($value['played_at']); // unix timestamp
+                        $playedstr = date('M j\, Y H\:i \U\T\C', $played); // exact time for title attr
+                        $diff = time() - $played; // difference in seconds
+                        if ($diff < 60) { // 1 minute
+                            $diffstr = 'just now';
+                        }
+                        elseif ($diff < 3600) { // 1 hour
+                            $diffstr = $diff < 90 ? 'a minute ago' : round($diff/60) . ' minutes ago';
+                        }
+                        elseif ($diff < 86400) { // 1 day
+                            $diffstr = $diff < 5400 ? 'an hour ago' : round($diff/3600) . ' hours ago';
+                        }
+                        elseif ($diff < 2592000) { // 1 month
+                            $diffstr = $diff < 129600 ? 'a day ago' : round($diff/86400) . ' days ago';
+                        }
+                        elseif ($diff < 31536000) { // 1 year
+                            $diffstr = $diff < 3888000 ? 'a month ago' : round($diff/2592000) . ' months ago';
+                        }
+                        else {
+                            $diffstr = 'over a year ago';
+                        }
+                        ?>
+                        <small title="<?php echo $playedstr; ?>">Played <?php echo $diffstr; ?></small>
                         <br>
                     </p>
                 </div>
@@ -92,7 +126,8 @@
                 </nav> -->
             </div>
             <div class="media-right">
-                <audio controls><source src="<?php echo $track['preview_url']; ?>" type="audio/mpeg">Your browser does not support the audio element.</audio>
+                <audio controls><source src="<?php echo $track['preview_url']; ?>" type="audio/mpeg">Your browser does not
+                support the audio element.</audio>
             </div>
         </article>
         <?php } ?> 
