@@ -26,47 +26,49 @@ require 'vendor/autoload.php';?>
         </div>
     </section>
 
-    <div class="content container">
-        <br>
-        <div class="columns">
-            <div class="column">
-                <h3>Time travel! 🚀 (Okay, not really. But kind of.)</h3>
-                <p class="feature-text">
-                    <a href="recent.php"><span class="tag feature-tag is-success">Go there</span></a>
-                    Have you ever heard a song you loved the sound of, only to have the song finish before you could see the
-                    title? No more! <strong>Recently played</strong> displays your 20 most recently listened to songs on
-                    Spotify and lets you hear samples of each, so you can find the song that is now stuck in your head.
-                </p>
-            </div>
-            <div class="column">
-                <h3>Get a new perspective on your playlists</h3>
-                <p class="feature-text">
-                    <span class="tag feature-tag is-info" disabled>Coming soon</span>
-                    With <strong>Sort by sound</strong>, you can sort the tunes in your playlist by the actual sound qualities
-                    of the song, including tempo, acousticness, danceability, and more.
-                </p>
-            </div>
-            <div class="column">
-                <h3>Edit your playlist covers on the fly</h3>
-                <p class="feature-text">
-                    <span class="tag feature-tag is-info">Coming soon</span>
-                    Normally, it's only possible to edit the cover or description of your playlists through the Spotify app on a
-                    computer. That changes with <strong>Quick cover</strong>, which allows you to upload a cover and descriptions
-                    to any of your playlists from a neat web interface, allowing you to personalize your lists to your heart's
-                    content from anywhere with an internet connection.
-                </p>
-                <!-- External project: Looking for a snazzy, customizable image to use as the cover for this playlist? Check out replacecover.com... -->
-            </div>
-            <div class="column">
-                <h3>Visualize and compare your music taste</h3>
-                <p class="feature-text">
-                    <span class="tag feature-tag is-info">Coming soon</span>
-                    Check out <strong>Tunealytics</strong>. It uses sound qualities of the songs within your playlists to help
-                    you find trends among the music you like. You can also compare your results with a friend's playlist.
-                </p>
-                <!-- External project: Want to see how your taste compares to thousands of other Spotify users? Check out obscurifymusic.com... -->
+    <section class="section">
+        <div class="content container">
+            <h1>Features</h1>
+            <div class="columns">
+                <div class="column">
+                    <h3>Time travel! 🚀 (Okay, not really. But kind of.)</h3>
+                    <p class="feature-text">
+                        <a href="recent.php"><span class="tag feature-tag is-success">Go there</span></a>
+                        Have you ever heard a song you loved the sound of, only to have the song finish before you could see the
+                        title? No more! <strong>Recently played</strong> displays your 20 most recently listened to songs on
+                        Spotify and lets you hear samples of each, so you can find the song that is now stuck in your head.
+                    </p>
+                </div>
+                <div class="column">
+                    <h3>Get a new perspective on your playlists</h3>
+                    <p class="feature-text">
+                        <span class="tag feature-tag is-info" disabled>Coming soon</span>
+                        With <strong>Sort by sound</strong>, you can sort the tunes in your playlist by the actual sound qualities
+                        of the song, including tempo, acousticness, danceability, and more.
+                    </p>
+                </div>
+                <div class="column">
+                    <h3>Edit your playlist covers on the fly</h3>
+                    <p class="feature-text">
+                        <span class="tag feature-tag is-info">Coming soon</span>
+                        Normally, it's only possible to edit the cover or description of your playlists through the Spotify app on a
+                        computer. That changes with <strong>Quick cover</strong>, which allows you to upload a cover and descriptions
+                        to any of your playlists from a neat web interface, allowing you to personalize your lists to your heart's
+                        content from anywhere with an internet connection.
+                    </p>
+                    <!-- External project: Looking for a snazzy, customizable image to use as the cover for this playlist? Check out replacecover.com... -->
+                </div>
+                <div class="column">
+                    <h3>Visualize and compare your music taste</h3>
+                    <p class="feature-text">
+                        <span class="tag feature-tag is-info">Coming soon</span>
+                        Check out <strong>Tunealytics</strong>. It uses sound qualities of the songs within your playlists to help
+                        you find trends among the music you like. You can also compare your results with a friend's playlist.
+                    </p>
+                    <!-- External project: Want to see how your taste compares to thousands of other Spotify users? Check out obscurifymusic.com... -->
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>
