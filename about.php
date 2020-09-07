@@ -28,10 +28,16 @@ require 'vendor/autoload.php';?>
         <h3>Resources</h3>
         <ul>
             <li>
-                The logo for TuneUtils is a <a href="https://fontawesome.com">Font Awesome</a> icon, and is licensed
-                under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
-                International</a>. For the favicon version of the logo, the icon was changed to a blue color
-                (<span class="tag is-info">#209CEE</span>).
+                The logo for TuneUtils is a <a href="https://fontawesome.com/icons/record-vinyl?style=solid">Font Awesome
+                icon</a>, and is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+                Attribution 4.0 International</a>. For the favicon version of the logo, the icon was changed to a blue
+                color (<span class="tag is-info">#209CEE</span>).
+            </li>
+            <li>
+                The cover image for the homepage is by Michael Mroczek (mroczekm), is found on
+                <a href="https://commons.wikimedia.org/wiki/File:Grado_Headphones_SR80e_(Unsplash).jpg">Wikimedia
+                Commons</a>, and is licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">
+                Creative Commons Zero 1.0 Universal Public Domain Dedication</a>.
             </li>
         </ul>
     </div>

@@ -9,3 +9,9 @@
 .nav-translucent:hover, .nav-translucent:focus {
     background: #2222 !important;
 }
+.bg-img {
+    background-image: url('/assets/headphones.jpg') !important;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(32,156,238, .8);
+}

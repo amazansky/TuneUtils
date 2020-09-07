@@ -1,4 +1,4 @@
-<nav class="navbar is-info <?php if (isset($transparentNav)) { echo 'transparent'; }?>" role="navigation"
+<nav class="navbar is-info<?php if (isset($transparentNav)) { echo ' transparent'; }?>" role="navigation"
     aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="index.php">
@@ -22,7 +22,7 @@
 
             <div class="navbar-item nav-translucent has-dropdown is-hoverable">
                 <a class="navbar-link">
-                    Tools
+                    Utils
                 </a>
 
                 <div class="navbar-dropdown">
@@ -58,6 +58,9 @@
                                 <small><strong>LOGGED IN AS <?php echo strtoupper($_SESSION['name']); ?></strong></small>
                             </div>
                             <hr class="navbar-divider">
+                            <a class="navbar-item" href=https://accounts.spotify.com/authorize?client_id=d7334867b2d94c2ca39d6462820cf8de&redirect_uri=http:%2F%2Flocalhost:8000%2Fauth%2Fauth.php&scope=user-read-private%20user-read-recently-played&response_type=token&state=123">
+                                Refresh access token
+                            </a>
                             <a class="navbar-item" href="auth/clearToken.php">
                                 Logout
                             </a>
