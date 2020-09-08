@@ -88,7 +88,7 @@
                             <?php
                             // Determine the human readable timestamp
                             $played = strtotime($value['played_at']); // unix timestamp
-                            $playedstr = date('M j\, Y H\:i \U\T\C', $played); // exact time for title attr
+                            $playedstr = 'Played ' . date('M j\, Y H\:i \U\T\C', $played); // exact time for title attr
                             $diff = time() - $played; // difference in seconds
                             if ($diff < 60) { // 1 minute
                                 $diffstr = 'just now';
