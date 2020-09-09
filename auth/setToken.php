@@ -21,6 +21,7 @@ if ($_POST['state'] === $_SESSION['spotify_state']) {
     $arr = json_decode($body, true);
     
     $_SESSION['name'] = htmlspecialchars($arr['display_name']);
+    $_SESSION['user_id'] = $arr['id'];
     $_SESSION['pfp'] = $arr['images'][0]['url'];
 }
 else {

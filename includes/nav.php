@@ -30,9 +30,10 @@
                     <a class="navbar-item" href="<?php echo $BASE_URL; ?>/recent.php">
                         Recently played
                     </a>
-                    <!-- <a class="navbar-item" href="<?php echo $BASE_URL; ?>/cover.php">
-                        Quick cover
-                    </a> -->
+                    <a class="navbar-item" href="<?php echo $BASE_URL; ?>/cover.php">
+                        <span class="tag feature-tag is-warning">Beta</span>
+                        Quick cover 
+                    </a>
                     <!-- <a class="navbar-item" href="<?php echo $BASE_URL; ?>/sort.php">
                         Sort by sound
                     </a> -->
@@ -40,34 +41,34 @@
             </div>
         </div>
         <div class="navbar-end">
+            <?php if ($_SESSION['status'] !== 200) { ?>
             <div class="navbar-item">
-                <?php if ($_SESSION['status'] !== 200) { ?>
                 <div class="buttons">
                     <a class="button is-dark"
                         href="<?php echo $SPOTIFY_AUTH_URL ?>">
                         <strong>Login with Spotify</strong>
                     </a>
                 </div>
-                <?php } else { ?>
-                <div class="navbar-item nav-translucent has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        <img src="<?php echo $_SESSION['pfp']; ?>" />
-                    </a>
-                    <div class="navbar-dropdown is-right">
-                        <div class="navbar-item" href="recent.php">
-                            <small><strong>LOGGED IN AS <?php echo strtoupper($_SESSION['name']); ?></strong></small>
-                        </div>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item" href="<?php echo $SPOTIFY_AUTH_URL ?>">
-                            Refresh access token
-                        </a>
-                        <a class="navbar-item" href="<?php echo $BASE_URL; ?>/auth/clearToken.php">
-                            Logout
-                        </a>
-                    </div>
-                </div>
-                <?php } ?>
             </div>
+            <?php } else { ?>
+            <div class="navbar-item nav-translucent has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    <img src="<?php echo $_SESSION['pfp']; ?>" />
+                </a>
+                <div class="navbar-dropdown is-right">
+                    <div class="navbar-item" href="recent.php">
+                        <small><strong>LOGGED IN AS <?php echo strtoupper($_SESSION['name']); ?></strong></small>
+                    </div>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="<?php echo $SPOTIFY_AUTH_URL ?>">
+                        Refresh access token
+                    </a>
+                    <a class="navbar-item" href="<?php echo $BASE_URL; ?>/auth/clearToken.php">
+                        Logout
+                    </a>
+                </div>
+            </div>
+            <?php } ?>
         </div>
     </div>
 </nav>

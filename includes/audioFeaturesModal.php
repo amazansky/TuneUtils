@@ -62,5 +62,4 @@
             <br>[Note] <small>If we're really being pedantic here, some of the values were originally between 0.0 and 1.0 (and you'll find that to be the case if you visit the link above and read the specification of Spotify's audio features object). However, all of them are scaled up by 100x for the purpose for this webapp. Considering the fact that you scrolled down this far, I figured you might want to know that.</small><br><br>
         </div>
     </section>
-    </div>
 </div>

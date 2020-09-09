@@ -2,6 +2,8 @@
 session_start();
 $_SESSION = [];
 $_SESSION['status'] = 0;
+session_unset();
+session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="en">

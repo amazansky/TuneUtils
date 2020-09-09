@@ -1,14 +1,14 @@
 <?php session_start(); 
-require 'vendor/autoload.php';?>
+require 'vendor/autoload.php';
+$pageTitle = 'Home'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TuneUtils</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" integrity="sha256-aPeK/N8IHpHsvPBCf49iVKMdusfobKo2oxF8lRruWJg=" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <?php require_once('includes/favicon.php'); ?>
+    <?php require_once('includes/meta.php'); ?>
 </head>
 <body>
     <?php 
@@ -19,9 +19,8 @@ require 'vendor/autoload.php';?>
     <section class="hero is-medium is-info bg-img">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">
-                    TuneUtils
-                </h1>
+                <h1 class="title">TuneUtils for Spotify</h1>
+                <h2 class="subtitle">TuneUtils is a set of quick tools that add some much-desired functionaltiy to the Spotify user experience.</h2>
             </div>
         </div>
     </section>
@@ -50,7 +49,7 @@ require 'vendor/autoload.php';?>
                 <div class="column">
                     <h3>Edit your playlist covers on the fly</h3>
                     <p class="feature-text">
-                        <span class="tag feature-tag is-info">Coming soon</span>
+                        <a href="cover.php"><span class="tag feature-tag is-warning">Go there (in beta)</span></a>
                         Normally, it's only possible to edit the cover or description of your playlists through the Spotify app on a
                         computer. That changes with <strong>Quick cover</strong>, which allows you to upload a cover and descriptions
                         to any of your playlists from a neat web interface, allowing you to personalize your lists to your heart's
@@ -70,5 +69,6 @@ require 'vendor/autoload.php';?>
             </div>
         </div>
     </section>
+    <?php require_once('includes/footer.php'); ?>
 </body>
 </html>

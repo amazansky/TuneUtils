@@ -1,16 +1,17 @@
 <?php session_start(); 
-require 'vendor/autoload.php';?>
+require 'vendor/autoload.php';
+$pageTitle = 'About';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About TuneUtils</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
         integrity="sha256-aPeK/N8IHpHsvPBCf49iVKMdusfobKo2oxF8lRruWJg=" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <?php require_once('includes/favicon.php'); ?>
+    <?php require_once('includes/meta.php'); ?>
 </head>
 
 <body>
@@ -42,6 +43,7 @@ require 'vendor/autoload.php';?>
             </ul>
         </div>
     </section>
+    <?php require_once('includes/footer.php'); ?>
 </body>
 
 </html>

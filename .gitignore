@@ -1,5 +1,5 @@
-vendor/
-composer.phar
+/vendor/
+/composer.phar
 
-tests/
-todo.txt
+/tests/
+/todo.txt
