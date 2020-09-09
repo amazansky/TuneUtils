@@ -71,7 +71,7 @@ $pageTitle = 'Quick cover';
                             <select name="playlist" required>
                             <?php forEach($arr['items'] as $item) {
                                 if ($item['owner']['id'] === $_SESSION['user_id']) {
-                                    echo '<option value="' . $item['id'] . '">' . $item['name'] . '</option>';
+                                    echo '<option value="' . htmlspecialchars($item['id']) . '">' . htmlspecialchars($item['name']) . '</option>';
                                 }
                             } ?>
                             </select>
