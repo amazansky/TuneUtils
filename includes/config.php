@@ -3,7 +3,7 @@
 /* If you run the site locally, be sure that [$BASE_URL]/auth/auth.php (where [$BASE_URL] is your set value for $BASE_URL)
    is set as a whitelisted redirect location in the settings for your app listing on the Spotify developer dashboard. More
    instructions in the README. */
-$BASE_URL = 'https://tuneutils.com';
+$BASE_URL = 'https://tuneutils.amazansky.com';
 
 // Spotify app info. Used in the auth URL.
 // Replace the client ID with your own if you want to run the site locally. More instructions in the README.
