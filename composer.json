@@ -1,6 +1,6 @@
 {
     "require": {
         "guzzlehttp/guzzle": "^7.0",
-        "ext-gd": "^7.3"
+        "ext-gd": "^8.0"
     }
 }
