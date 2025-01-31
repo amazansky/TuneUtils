@@ -1,4 +1,9 @@
 # TuneUtils
+
+:warning: **TuneUtils is no longer being maintained.** Read the story of this project [here](https://alexmazansky.com/posts/2023/01/24/passion-project).
+
+![Screenshot of TuneUtils homepage](https://github.com/amazansky/TuneUtils/raw/master/.github/screenshots/homepage.jpg "TuneUtils Homepage")
+
 A set of quick web tools that add some much-needed functionality to the Spotify user experience
 
 ## Features
